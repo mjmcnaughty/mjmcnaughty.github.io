@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<title>This is title of your website.</title>
+	<meta name="description" content="Description of the page content"/>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+	<div class="container">
+		<div class="jumbotron">
+		<h1>Hello World</h1>
+		<p class="lead">Welcome to my first site!</p>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<h4>About Me</h4>
+				<p>I love learning to code!</p>
+				</div>
+			<div class="col-sm-8">
+				<h4>Favorite Quote</h4>
+					<p>"Live as if you were to die tomorrow; learn as if you were to live forever."</p>
+					<p class="text muted">Mahatma Gandhi</p></div>
+		</div>
+<div class="row">
+					<div class="col-sm-12">
+					<hr>
+					<img src="aspen.jpg" alt="Aspen playing in the snow"
+					title="Aspen playing the snow." class="img-responsive">
+					<center><p class="text-muted">Aspen</p></center>
+					</div>
+				</div>
+	</div>
+	<script>
+
+	function changeColor(){
+	var red = Math.floor(Math.random()*255)+180;
+	var green = Math.floor(Math.random()*255)+180;
+	var blue = Math.floor(Math.random()*255)+180;
+	var myColor = "rgb("+red+","+green+","+blue+")";
+
+	document.body.style.backgroundColor = myColor;
+	}
+
+	window.setInterval(changeColor,1000);
+
+	</script>
+	</body>
+</html>
